@@ -33,7 +33,33 @@ Real-time threat detection system that classifies people as armed or unarmed usi
 - Epochs: 50
 - Hardware: NVIDIA RTX 3060 Laptop GPU
 - Final mAP50: 0.80+
+  
+## Model Training
 
+Custom YOLOv8 gun detector trained from scratch on labeled firearm dataset.
+
+### Dataset
+- Source: Roboflow Universe (Gun Detection dataset)
+- Classes: gun
+- Format: YOLOv8
+
+### Training Configuration
+| Parameter | Value |
+|-----------|-------|
+| Base model | YOLOv8n |
+| Epochs | 50 |
+| Image size | 640x640 |
+| Batch size | 16 |
+| Hardware | NVIDIA RTX 3060 Laptop GPU |
+| Training time | ~1 hour |
+
+### Results
+![Training Results](results/results.png)
+![Confusion Matrix](results/confusion_matrix.png)
+
+### How to retrain
+pip install ultralytics roboflow
+py -3.11 train.py
 ## How to run
 pip install -r requirements.txt
 py -3.11 detect.py
