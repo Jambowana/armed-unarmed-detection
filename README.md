@@ -81,3 +81,6 @@ py -3.11 detect.py
 - Build web dashboard for live monitoring
 - Improve gun detection accuracy with larger dataset
 - Add alert system for armed detections
+
+## Skills Demonstrated
+`Python` `Computer Vision` `Deep Learning` `YOLOv8` `OpenCV` `Custom Model Training` `Object Tracking` `CUDA/GPU`
